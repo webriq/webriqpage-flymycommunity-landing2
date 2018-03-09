@@ -8,6 +8,7 @@
   },
   "bugs": "https://github.com/eljunz//issues",
   "dependencies": {
+    "nodejs-latest": "^1.1.0",
     "reshape-standard": "^3.1.1",
     "spike": "^2.2.0",
     "spike-collections": "^1.2.0",

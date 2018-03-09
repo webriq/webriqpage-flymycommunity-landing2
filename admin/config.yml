@@ -35,6 +35,27 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Author", name: "metauthor", widget: "string"}
               - {label: "Keywords", name: "metakeyword", widget: "string"}
               - {label: "Footer", name: "footer", widget: "markdown"}
+              - {label: "Web Creator", name: "footerfooterdesigned", widget: "markdown"}
+
+          - label: "Content Information"
+            name: "content"
+            widget: "list"
+            fields:
+              - {label: "Your Email", name: "email", widget: "string", dom_data: [{ target: ".col.mail a", attr: "mailto" }, { target: ".contsbts li:nth-child(1) a", attr: "text" }]}
+              - {label: "Your Contact Phone Number", name: "linkcont", widget: "string", dom_data: [{target: ".contsbts li:nth-child(2) a", attr: "href"}]}              
+              - {label: "Slider Background", name: "sliderbg", widget: "image", media_folder: "assets/img"}
+              - {label: "Video Link", name: "slider_video", widget: "string"}
+
+          - label: "About Information"
+            name: "about"
+            widget: "list"
+            fields:
+              - {label: "Video Sub", name: "abouttext1", widget: "string", dom_data: [{ target: ".dethead span", attr: "text"}]}
+              - {label: "Video Title", name: "abouttitle", widget: "string", dom_data: [{ target: ".dethead h1", attr: "text"}]}
+              - {label: "Video Description", name: "aboutcontent", widget: "string", dom_data: [{ target: ".dethead p", attr: "text"}]}
+              - {label: "Background", name: "aboutbg", widget: "image", media_folder: "assets/img"}
+              - {label: "Share Title", name: "sharetitle", widget: "string", dom_data: [{ target: ".sharevid span", attr: "text"}]}
+
 
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Posts"  # Used in the UI, ie.: "New Post"

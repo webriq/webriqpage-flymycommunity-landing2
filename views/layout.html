@@ -5,13 +5,16 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='description' content='{{ metadesc }}'>
     <meta name='keywords' content='{{ metakeywords }}'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>   
+    <link rel="icon" href="{{ site.sitedata[0].icon }}" type="image/gif" sizes="16x16">
 
     <block name='title'>
-      <title>Title of Your Site</title>
+      <title>Fly My Community</title>
     </block>
 
     <link rel='stylesheet' href='css/index.css' />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -21,6 +24,9 @@
 
     <block name='javascript'>
       <script src='js/main.js' defer></script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59f69bb3eb4c4db8"></script>
     </block>
   </body>
 </html>
