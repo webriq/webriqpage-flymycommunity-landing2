@@ -50,11 +50,11 @@ collections: # A list of collections the CMS should be able to edit
             name: "about"
             widget: "list"
             fields:
-              - {label: "Video Sub", name: "abouttext1", widget: "string", dom_data: [{ target: ".dethead span", attr: "text"}]}
-              - {label: "Video Title", name: "abouttitle", widget: "string", dom_data: [{ target: ".dethead h1", attr: "text"}]}
-              - {label: "Video Description", name: "aboutcontent", widget: "string", dom_data: [{ target: ".dethead p", attr: "text"}]}
+              - {label: "Video Sub", name: "abouttext1", widget: "string" }
+              - {label: "Video Title", name: "abouttitle", widget: "string"}
+              - {label: "Video Description", name: "aboutcontent", widget: "string"}
               - {label: "Background", name: "aboutbg", widget: "image", media_folder: "assets/img"}
-              - {label: "Share Title", name: "sharetitle", widget: "string", dom_data: [{ target: ".sharevid span", attr: "text"}]}
+              - {label: "Share Title", name: "sharetitle", widget: "string"}
 
 
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
