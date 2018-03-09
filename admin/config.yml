@@ -36,12 +36,12 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Keywords", name: "metakeyword", widget: "string"}
               - {label: "Footer", name: "footer", widget: "markdown"}
               - {label: "Web Creator", name: "footerfooterdesigned", widget: "markdown"}
-          - label: "About"
-            name: "about"
+          - label: "About Info"
+            name: "abouts"
             widget: "list"
-            fields:
-              - {label: "Video Sub", name: "abouttext1", widget: "string" }
+            fields:              
               - {label: "Video Title", name: "abouttitle", widget: "string"}
+              - {label: "Video Sub", name: "abouttext1", widget: "string" }
               - {label: "Video Description", name: "aboutcontent", widget: "string"}
               - {label: "Background", name: "aboutbg", widget: "image", media_folder: "assets/img"}
               - {label: "Share Title", name: "sharetitle", widget: "string"}
