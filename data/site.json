@@ -3,31 +3,32 @@
     {
       "sitename": "Fly My Community",
       "icon": "/img/favicon.png",
-      "logo": "/img/logo-webservices.png",
+      "logo": "/img/logo.png",
       "logoname": "Fly My Community",
       "metadesc": "Trusted By Fine Real Estate Professionals",
       "metauthor": "Fly My Community",
       "metakeyword": "cms",
-      "footer": "Copyright 2018 FlyMyCommunity.com | All Rights Reserved",
-      "footerdesigned": "Designed by Mad Crane Marketing - Powered by WebriQ"
+      "footer": "All rights reserved! 2018 WebriQ Pte Ltd"
     }
   ],
   "content": [
     {
       "email": "realagent@flymycommunity.com",
-      "logo": "/img/logo.png",
-      "linkcont": "+0909 2131 1231", 
+      "logo": "/img/logofly.png",
+      "linkcont": "032000333555",
+      "videoid": "250014579",
       "sliderbg": "/img/sliderbg.jpg",
-      "slider_video": "136686505?autopslay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0"
+      "sliderbg_video": "https://player.vimeo.com/video/250014579?background=1",
+      "slidertext1": "Discover the Beauty",
+      "slidertext2": "Crystal Parks",
+      "poplink": "//vimeo.com/250014579"
     }
   ],
-  "abouthere": [
+  "about": [
     {
-      "abouttext1": "Fly My Community",
-      "abouttitle": "Crystal Park - FMC",      
-      "aboutcontent": "Crystal Park is a private gated mountain community within the Pikes Peak region. Located above Colorado Springs and adjacent to Manitou Springs…",
-      "aboutbg": "/img/content_bg.jpg",
-      "sharetitle": "SHARE VIDEO"
+      "abouttext1": "Crystal Park - FMC ",
+      "abouttext2": "Crystal Park is a private gated mountain community within the Pikes Peak region. Located above Colorado Springs and adjacent to Manitou Springs.....",
+      "aboutbg": "/img/content_bg.png"
     }
   ],
   "updatedDate": "2017-11-28T06:24:37.530Z"
