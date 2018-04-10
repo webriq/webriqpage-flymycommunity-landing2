@@ -27,22 +27,19 @@ collections: # A list of collections the CMS should be able to edit
           - label: "Site Information"
             name: "sitedata"
             widget: "list"
-            fields:
-              - {label: "Web Creator", name: "footerfooterdesigned", widget: "markdown"}
+            fields:              
               - {label: "Website Title", name: "sitename", widget: "string"}
               - {label: "Website Meta Description", name: "metadesc", widget: "string"}
               - {label: "Website Meta Keywords", name: "metakeyword", widget: "string"}
               - {label: "Website Author", name: "metauthor", widget: "string"}
-              - {label: "Website Logo", name: "logo", widget: "image", media_folder: "assets/img", dom_data: [{ target: ".logo img", attr: "src"}]}
+              - {label: "Website Logo", name: "logo", widget: "image", media_folder: "assets/img", dom_data: [{ target: ".logohere img", attr: "src"}]}
           - label: "Content Information"
             name: "content"
             widget: "list"
             fields:
-              - {label: "Your Email", name: "email", widget: "string", dom_data: [{ target: ".col.mail a", attr: "mailto" }, { target: ".col.mail a", attr: "text" }]}
+              - {label: "Your Email", name: "email", widget: "string", dom_data: [{ target: "mail a", attr: "mailto" }, { target: ".mail a span", attr: "text" }]}
               - {label: "Your Contact Phone Number", name: "linkcont", widget: "string", dom_data: [{target: ".phone", attr: "href"}]}
               - {label: "Video ID", "name": "videoid", widget: "string", dom_data: [{ target: ".col.btnplay a", attr: "href", value_pattern: "//vimeo.com/{0}" }, { target: "#main-slider .video-foreground iframe", attr: "src", value_pattern: "https://player.vimeo.com/video/{0}?background=1" },{"attr":"data-izimodal-iframeurl","target":".modais", "value_pattern":"//vimeo.com/{0}"}]}
-              - {label: "Video Subheading", name: "slidertext1", widget: "string", dom_data: [{ target: ".video-subheading", attr: "text"}] }
-              - {label: "Video Heading", name: "slidertext2", widget: "string", dom_data: [{ target: ".video-heading", attr: "text"}]}
           - label: "About Information"
             name: "about"
             widget: "list"
