@@ -63,16 +63,16 @@
 body #sliderhere iframe {
   top:60px !important;
   left:0;
-  width:100%; 
+  width:100%;
   opacity:1;
-  min-height:680px !important;  
+  min-height:680px !important;
 }
 #sliderhere, #sliderhere iframe {
   top:0;
   left:0;
   width:120%;
   height:150% !important;
-  opacity:1; 
+  opacity:1;
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -126,6 +126,7 @@ body #sliderhere iframe {
 
 #menu .logohere img {
   width:30%;
+  max-width: 100px
 }
 
 #menu .contsbts ul {
@@ -180,7 +181,7 @@ body #sliderhere iframe {
 }
 
 #sliderhere iframe {
-  margin-top:20px !important; 
+  margin-top:20px !important;
 }
 
 #sliderhere, #sliderhere iframe {
@@ -188,7 +189,7 @@ body #sliderhere iframe {
   left:0;
   width:100%;
   height:250% !important;
-  opacity:1; 
+  opacity:1;
 }
 
 #content {
@@ -288,54 +289,54 @@ body #sliderhere iframe {
 
 #copyhere .col-6:nth-child(2) a {
   color:#fff;
-} 
+}
 
 
 
 @media(max-width:1024px) {
   body {
     overflow:scroll;
-  } 
+  }
   #sliderhere iframe {
     margin-top:-50px !important;
-  } 
+  }
 }
 
-@media(max-width:768px) { 
+@media(max-width:768px) {
    #sliderhere iframe {
     min-height:400px !important;
     min-width:100% !important;
   }
   body #sliderhere iframe {
     margin-top:100px !important;
-  } 
-  #menu .contsbts ul li a { 
-    font-size: 12px; 
+  }
+  #menu .contsbts ul li a {
+    font-size: 12px;
   }
   #copyhere p {
     font-size:12px
-    
+
   }
-  #sliderhere { 
+  #sliderhere {
     padding:0px 0px 0px
   }
   body #sliderhere iframe {
     top:60px !important;
     left:0;
-    width:100%; 
+    width:100%;
     opacity:1;
-    min-height:380px !important;  
+    min-height:380px !important;
   }
 }
 
 @media(max-width:600px) {
   #sliderhere iframe {
     margin-top:85px !important;
-  } 
-  #menu .contsbts ul li a { 
-    font-size: 0px; 
   }
-  #menu .contsbts ul li { 
+  #menu .contsbts ul li a {
+    font-size: 0px;
+  }
+  #menu .contsbts ul li {
     margin-right:0px !important
   }
   #menu .logohere img {
@@ -346,11 +347,11 @@ body #sliderhere iframe {
     min-width:100% !important;
   }
   .dethead h1 {
-    font-size: 28px; 
+    font-size: 28px;
   }
   .dethead p {
-    font-size: 16px; 
-    width: 100%; 
+    font-size: 16px;
+    width: 100%;
   }
   #copyhere .col {
     min-width:100% !important;
