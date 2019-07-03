@@ -39,15 +39,15 @@
     </section>
     <section id="bioraphy">
       <div class="container">
-        <h2 class="mt-0 mb-5 text-blue text-center">Agent</h2>
+        <h2 class="mt-0 mb-5 text-white text-center">Agent</h2>
         <each loop='bio of biography.biography'>
-          <div class="card flex-row flex-wrap">
+          <div class="card text-center">
 
             <div class="card-header border-0">
               <img src="{{bio.image}}" class="card-img-top img-fluid" alt="biography" >
             </div>
-              <div class="card-body">
-                <h3 class="card-title">{{bio.fullname}}</h3>
+              <div class="card-body pt-1">
+                <h3 class="card-title text-white">{{bio.fullname}}</h3>
                 <div class="stars mb-2">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -56,14 +56,14 @@
                   <i class="fas fa-star"></i>
                 </div>
                 <div class="mb-2">
-                  <p class="card-text"><span class="text-blue">Position:</span> {{bio.position}}</p>
-                  <p class="card-text"><span class="text-blue">Specialties:</span> {{bio.specialties}}</p>
-                  <p class="card-text"><span class="text-blue">License No.:</span> {{bio.license}}</p>
+                  <p class="card-text mb-2 text-white"><span class="text-white-50">Position</span><br/> {{bio.position}}</p>
+                  <p class="card-text mb-2 text-white"><span class="text-white-50">Specialties</span><br/> {{bio.specialties}}</p>
+                  <p class="card-text mb-2 text-white"><span class="text-white-50">License No.</span><br/> {{bio.license}}</p>
                 </div>
-                <p class="card-text"><a href="tel:{{bio.phonenumber}}"  class="phone"><i class="fas fa-mobile-alt"></i>{{bio.phonenumber}}</a></p>
+                <!-- <p class="card-text"><a href="tel:{{bio.phonenumber}}"  class="phone"><i class="fas fa-mobile-alt"></i>{{bio.phonenumber}}</a></p>
                 <p class="card-text"><a href="mailto:{{bio.email}}" class="email"><i class="fas fa-envelope"></i>{{bio.email}}</a></p>
-                <p class="card-text"><a href="{{bio.website}}" class="website"><i class="fas fa-globe-americas"></i>www.{{bio.website}}</a></p>
-                <div class="social my-2">
+                <p class="card-text"><a href="{{bio.website}}" class="website"><i class="fas fa-globe-americas"></i>www.{{bio.website}}</a></p> -->
+                <div class="social mt-3 mb-4 justify-content-center">
                   <a href="{{bio.facebook}}" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
                   <a href="{{bio.instagram}}" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                   <a href="{{bio.pinterest}}" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest-p"></i></a>
@@ -73,30 +73,39 @@
                 
                 
                 <!-- <p class="card-text pt-4 pb-3">{{bio.shortdesc}}</p> -->
-                <br/>
-                <a class="btn btn-primary btn-blue" href="#inline-bio{{bio.num}}" role="button" data-lity>Know More</a>
+                <a class="btn btn-primary btn-white" href="#inline-bio{{bio.num}}" role="button" data-lity>Know More</a>
 
               </div>
             </div>
 
             <div id="inline-bio{{bio.num}}" style="background:#fff" class="inline lity-hide">
-              <div class="details pt-4 px-2">
-                <h3 class="card-title">{{bio.fullname}}</h3>
-                <div class="stars mb-2">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+              <div class="details">
+                <div class="bg-blue p-4">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="{{bio.image}}" class="avatar img-fluid" alt="biography" >
+                  </div>
+                  <div class="col-7">
+                    <h3 class="card-title text-white">{{bio.fullname}}</h3>
+                    <div class="stars mb-2">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="mb-2">
+                      <p class="text-white"><span class="text-white-50">Position:</span> {{bio.position}}</p>
+                      <p class="text-white"><span class="text-white-50">Specialties:</span> {{bio.specialties}}</p>
+                      <p class="text-white"><span class="text-white-50">License No.:</span> {{bio.license}}</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="mb-2">
-                  <p><span class="text-blue">Position:</span> {{bio.position}}</p>
-                  <p><span class="text-blue">Specialties:</span> {{bio.specialties}}</p>
-                  <p><span class="text-blue">License No.:</span> {{bio.license}}</p>
                 </div>
-                <hr/>
+                <div class="pt-4">
                 <p class="text-blue mb-2">Biography</p>
                 <p class="pb-3">{{bio.description}}</p>
+                </div>
                 <hr/>
                 <p class="pl-4"><i class="fas fa-map-marker-alt text-blue"></i> {{bio.address}}</p>
                 <p><a href="tel:{{bio.phonenumber}}"><i class="fas fa-mobile-alt"></i>{{bio.phonenumber}}</a></p>

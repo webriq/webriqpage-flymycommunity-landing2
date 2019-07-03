@@ -277,7 +277,7 @@ body #sliderhere iframe {
 /*Biography*/
 
 #bioraphy {
-  background: url(/img/white-bg.jpg) repeat;
+  background: url(/img/fly2_bg.jpg) repeat;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -285,17 +285,24 @@ body #sliderhere iframe {
   padding: 100px 0px;
 }
 
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.50);
+}
 .text-blue {
   color: #4a7dc7 !important;
 }
 
+.bg-blue {
+  background-color: #316edf;
+}
+
 .card-header {
-  background: #fff;
-  width: 380px;
+  background: transparent;
 }
 
 .card-header .card-img-top {
-  border-radius: 50%;
+  border-radius: 100%;
+  width: 200px;
 }
 
 .card-body a {
@@ -382,9 +389,9 @@ body #sliderhere iframe {
 .inline {
   max-width: 600px;
   width: 100%;
-  padding: 20px;
+  padding: 25px;
   border-radius: 3px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 
@@ -412,7 +419,7 @@ body #sliderhere iframe {
 }
 
 #bioraphy .card {
-  max-width: 900px;
+  max-width: 380px;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -423,12 +430,12 @@ body #sliderhere iframe {
 }
 
 #bioraphy card-header {
-  float: left;
+  /*float: left;*/
 }
 
 #bioraphy .card-body {
-  float: left;
-  width: 300px;
+ /* float: left;*/
+  /*width: 300px;*/
   position: relative;
 }
 
@@ -474,33 +481,41 @@ body #sliderhere iframe {
   margin-top: 5px;
 }
 
-.btn-blue {
+.details .avatar {
+  border-radius: 100%;
+}
+.details .social a {
+  background-color:#4b7bbe;
+  color:#fff;
+}
+
+.btn-white {
   color: #fff !important;
-  border: solid 1px rgba(221, 221, 221, .34902);
+  border: solid 1px #ffffff;
   padding: 10px 30px;
   text-align: center;
-  background: #4370b6;
+  background: transparent;
   border-radius: 0px;
 }
 
-.btn-blue:hover {
-  color: #4370b6 !important;
+.btn-white:hover {
+  color: #ffffff !important;
   padding: 10px 30px;
   text-align: center;
   background: transparent !important;
-  border: 1px solid #4370b6 !important;
+  border: 1px solid rgba(255, 255, 255, 0.50) !important;
 }
 
-.btn-blue:active,
-.btn-blue:focus {
-  color: #4370b6 !important;
+.btn-white:active,
+.btn-white:focus {
+  color: #ffffff !important;
   padding: 10px 30px;
   text-align: center;
   background: transparent !important;
-  border: 1px solid #4370b6 !important;
+  border: 1px solid rgba(255, 255, 255, 0.50) !important;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0rem rgba(0, 123, 255, .5) !important;
-  box-shadow: 0 0 0 0rem rgba(0, 123, 255, .5) !important;
+  -webkit-box-shadow: 0 0 0 0rem rgba(255, 255, 255, 0.50) !important;
+  box-shadow: 0 0 0 0rem rgba(255, 255, 255, 0.50) !important;
 }
 
 .stars i {
@@ -515,7 +530,8 @@ body #sliderhere iframe {
   justify-content:flex-start
 }
 .social a {
-  border: 1px solid #4370b6;
+  border: 1px solid #ffffff;
+  color: #ffffff;
   margin-right:6px;
   display:flex !important;
   align-items:center;
